@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202c37;
+}
+
+header {
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 5px;
+    align-items: center;
+}
+
+header input {
+    width: 300px;
+    background: #2b3945;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 6px;
+    margin: 5px;
+
+}
+
+header input::placeholder {
+    padding-left: 5px;
+}
+
+header .search {
+    background-color: #2b3945;
+    border: none;
+    color: white;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .search:hover {
+    background-color: #405b72;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+    margin: 50px auto;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 250px);
+    gap: 10px;
+}
+
+@media(max-width:676px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    .container {
+        grid-template-columns: repeat(2, 45%)
+    }
+}
+
+.container .box {
+    color: white;
+    background-color: #2b3945;
+    border-radius: 6px;
+}
+
+
+img {
+    width: 100%;
+    height: 45%;
+    border-radius: 6px;
+}
+
+.container .box .country {
+    padding: 10px;
+}
+
+.text {
+    line-height: 2;
+    color: #acacac;
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+span {
+    padding-right: 5px;
+    font-weight: normal;
+    color: white;
+}
